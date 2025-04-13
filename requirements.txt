@@ -1,0 +1,25 @@
+# Core dependencies
+opencv-python
+ultralytics
+Pillow
+requests
+python-dotenv
+
+# NOTA SOBRE PYTORCH:
+# Ultralytics (YOLO) depende do PyTorch.
+# Recomenda-se instalar o PyTorch *separadamente* antes de instalar o restante,
+# especialmente se você precisar de suporte a GPU (CUDA).
+# Visite: https://pytorch.org/get-started/locally/
+#
+# Exemplo para CPU:
+# pip install torch torchvision torchaudio
+#
+# Exemplo para CUDA 11.8 (verifique a sua versão!):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+#
+# Exemplo para CUDA 12.1 (verifique a sua versão!):
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+#
+# Se você instalar apenas via 'pip install -r requirements.txt',
+# o pip pode instalar uma versão padrão (geralmente CPU) do PyTorch
+# como dependência do ultralytics. Para controle total (CPU/GPU), instale antes.
