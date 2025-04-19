@@ -133,6 +133,10 @@ Siga estes passos para configurar o ambiente e executar o projeto localmente usa
 
 Veja o arquivo `requirements.txt` para a lista completa (exceto PyTorch, que deve ser instalado separadamente).
 
+## Treinamento e utilização do modelo
+
+Um novo modelo pode ser treinado a partir das instruções do arquivo `yolo_roboflow_training.ipynb`. Os modelos que foram utilizados para testar a aplicação podem ser encontrados [aqui](https://drive.google.com/drive/folders/1Fz7riVzD99UnTvr8JxoAzwQtpo5-nVh7?usp=sharing).
+
 ## Licença
 
 Distribuído sob a licença MIT. Veja o arquivo `LICENSE` para mais informações.

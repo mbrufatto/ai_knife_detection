@@ -176,3 +176,7 @@ cython_debug/
 # Models
 models/
 .pt
+
+# Videos
+videos/
+.mp4

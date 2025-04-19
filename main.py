@@ -19,8 +19,10 @@ load_dotenv()
 AVAILABLE_MODELS = {
     "YOLOv11n - Sem finetuning": "yolo11n.pt",
     "YOLOv11s - Sem finetuning": "yolo11s.pt",
-    "YOLOv11n - Dataset COCO": "yolo11n_dataset_coco.pt",
-    "YOLOv11s - Dataset Knife": "yolo11s_dataset_knife.pt",
+    "YOLOv11n - COCO": "yolo11n_dataset_coco.pt",
+    "YOLOv11n - Knife - Scissors": "yolo11n_dataset_knife_scissors.pt",
+    "YOLOv11s - Knife - Scissors": "yolo11s_dataset_knife_scissors.pt",
+    "YOLOv11s - All Knives": "yolo11s_dataset_knife.pt",
     "YOLOv11m - Sem finetuning": "yolo11m.pt",
     # Adicione mais modelos aqui se necessário
     # "Outro Modelo": "caminho/para/outro_modelo.pt"
@@ -28,9 +30,11 @@ AVAILABLE_MODELS = {
 
 # Dicionário de fontes de vídeo disponíveis (Nome Amigável: Valor para OpenCV)
 AVAILABLE_SOURCES = {
-    "Webcam Interna (1)": 1,
-    "Câmera IP": "rtsp://admin:Teste123@192.168.15.45:554/onvif1",
-    "Video 1": "video_knife_1.mp4",
+    "Webcam Interna (Mobile)": 0,
+    "Webcam Interna (PC)": 1,
+    "Câmera IP": "rtsp://admin:Teste123@192.168.15.59:554/onvif1",
+    "Video 1 (0:42)": "videos/video_knife_1.mp4",
+    "Video 2 (0:04)": "videos/video_knife_2.mp4",
     # Adicione outras câmeras ou arquivos de vídeo aqui
     # "Vídeo Arquivo": "caminho/para/video.mp4"
 }
