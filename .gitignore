@@ -182,3 +182,4 @@ videos/
 .mp4
 /Scripts
 pyvenv.cfg
+/share

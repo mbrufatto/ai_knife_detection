@@ -33,8 +33,8 @@ AVAILABLE_SOURCES = {
     "Webcam Interna (Mobile)": 0,
     "Webcam Interna (PC)": 1,
     "Câmera IP": "rtsp://admin:Teste123@192.168.15.59:554/onvif1",
-    "Video 1 (0:42)": "videos/video_knife_1.mp4",
-    "Video 2 (0:04)": "videos/video_knife_2.mp4",
+    "Video 1 (0:42)": "data/inputs/video.mp4",
+    "Video 2 (0:04)": "data/inputs/video2.mp4",
     # Adicione outras câmeras ou arquivos de vídeo aqui
     # "Vídeo Arquivo": "caminho/para/video.mp4"
 }
