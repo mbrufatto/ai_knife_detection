@@ -183,3 +183,10 @@ videos/
 /Scripts
 pyvenv.cfg
 /share
+data/datasets/annotations/captions_train2017.json
+data/datasets/annotations/captions_val2017.json
+data/datasets/annotations/instances_train2017.7z
+data/datasets/annotations/instances_train2017.json
+data/datasets/annotations/instances_val2017.json
+data/datasets/annotations/person_keypoints_train2017.json
+data/datasets/annotations/person_keypoints_val2017.json

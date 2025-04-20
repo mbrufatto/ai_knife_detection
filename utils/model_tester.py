@@ -7,9 +7,9 @@ from tqdm import tqdm
 from collections import deque
 
 # --- CONFIGURAÇÕES ---
-input_video_path = '../data/input/video.mp4'  # Caminho do vídeo de entrada
-output_video_path = '../data/output/output_detected.mp4'  # Caminho do vídeo de saída
-model_path = '../models/yolo11s_dataset_knife_scissors.pt'  # Caminho para o modelo YOLO treinado
+input_video_path = './data/inputs/video2.mp4'  # Caminho do vídeo de entrada
+output_video_path = './data/output/output_detected2.mp4'  # Caminho do vídeo de saída
+model_path = './models/yolo11s_dataset_coco.pt'  # Caminho para o modelo YOLO treinado
 
 try:
     # --- CARREGAR MODELO ---

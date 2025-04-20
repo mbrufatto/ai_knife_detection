@@ -44,7 +44,6 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
 - Sistemas de monitoramento inteligente
 - Ambientes com alto risco (escolas, hospitais, aeroportos)
 - Detecção de objetos cortantes ou suspeitos  
-![Exemplo de uso](images/sample.png)
 
 ## 📁 Estrutura de Pastas
     ├── data                                    - vídeos de avaliação
@@ -81,6 +80,29 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
 - **Configurabilidade:** Várias opções (modelos, fontes, limiares, webhook) podem ser facilmente ajustadas no início do script Python.
 
 ## Resultados Obtidos
+- Identificação de objetos como facas e tesouras através de câmeras web  
+        ![Objetos Identificados](images/sample.png)
+- Finetuning com DataSet COCO
+        ![Resultados de treinamentos](images/val_batch0_labels.jpg)
+
+
+
+## Contribuição para estudos acadêmicos
+### Dataset COCO
+O dataset original COCO (Common Objects in Context) contém 80 classes e centenas de milhares de imagens. No projeto, foi filtrado para manter apenas as classes de interesse: fork, knife e scissors. Algumas estratégias foram adotadas para ser possível utilizar o dataset COCO:
+- Equilibrar o número de amostras por classe, reduzindo viés na aprendizagem.
+- A biblioteca FiftyOne foi usada selecionar um número semelhante de instâncias por classe.
+
+### Dicas essenciais
+- O dataset COCO utiliza arquivos de anotações json que posteriormente são convertidos em arquivos .txt com as coordenadas do objetivo e sua classe no seguinte formato:  
+        ```
+        <class_id> <x_center> <y_center> <width> <height>
+        ```
+
+- Este projeto foi configurado utilizando Windows 11. Para que fosse possível executar corretamente este dataset foi necessário copiar os arquivos annotations originais dentro da pasta de projeto **datasets\annotations**. Os arquivos estão disponíveis [neste link](https://drive.google.com/file/d/10uuXgfnoxLmRJyFcOOELr5Vd1E867gaW/view?usp=drive_link). Os arquivos utilizados foram instances_train2017.json e instances_val2017.json, que podem ser obtidos diretamente no site do projeto [Coco Dataset](https://cocodataset.org/#home).
+
+- A documentação COCO sugere que os arquivos com as coordenadas sejam armazenadas dentro da pasta **labels** no mesmo nível da pasta **images**. No caso desse projeto os arquivos ficaram dentro de uma única pasta, definida dinamicamente pelo arquivo **utils\model_coach.py**.
+
 
 
 ## Setup Inicial (Usando Conda)
