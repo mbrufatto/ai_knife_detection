@@ -81,6 +81,8 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
 ## Resultados Obtidos
 - Identificação de objetos como facas e tesouras através de câmeras web  
         ![Objetos Identificados](images/sample.png)
+        ![Objetos Identificados](images/video1_cortante.png)
+        ![Objetos Identificados](images/video2_cortante.png)
 - Finetuning com DataSet COCO | 40 epocs | 4GB GPU
         ![Resultados de treinamentos](images/results_yolo11_coco.png)
         Interpretação dos resultados:  
