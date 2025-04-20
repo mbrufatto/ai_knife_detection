@@ -49,8 +49,7 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
     ├── data                                    - vídeos de avaliação
         └── inputs  
         └── results                             - Resultados obtidos com os modelos utilizados
-            └── video_output_yolo11s_coco.mp4   - Saída do Vídeo de teste utilizando modelo yolo11s_dataset_coco.pt
-            └── video2_output_yolo11s_coco.mp4  - Saída do Vídeo de teste utilizando modelo yolo11s_dataset_coco.pt
+            └── hackathon.txt                   - Link para os vídeos da avaliação
     ├── images                                  - imagens da documentação
     ├── models                                  - modelos treinados com datasets públicos
         └── yolo11m.pt                          - Modelo sem fine tuning (dataset Yolo), de tempo médio para uso com GPU 
@@ -94,7 +93,8 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
 - Resultado validação com imagens
         ![Resultados de treinamentos](images/val_batch0_labels.jpg)
 
-
+- Melhor modelo treinado: **yolo11s_dataset_knife.pt**.
+        Aparentemente quando o modelo é treinado para identificar um único objeto os resultados são mais precisos.
 
 ## Contribuição para estudos acadêmicos
 ### Dataset COCO
