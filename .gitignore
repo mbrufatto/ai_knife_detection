@@ -180,3 +180,5 @@ models/
 # Videos
 videos/
 .mp4
+/Scripts
+pyvenv.cfg
