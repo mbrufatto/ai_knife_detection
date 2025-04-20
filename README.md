@@ -82,7 +82,16 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
 ## Resultados Obtidos
 - Identificação de objetos como facas e tesouras através de câmeras web  
         ![Objetos Identificados](images/sample.png)
-- Finetuning com DataSet COCO
+- Finetuning com DataSet COCO | 40 epocs | 4GB GPU
+        ![Resultados de treinamentos](images/results_yolo11_coco.png)
+        Interpretação dos resultados:  
+        - Box(P): 0.623      (62.3% de precisão)  
+        - R:      0.402      (40.2% de recall)  
+        - mAP50:  0.452      (45.2% média de acerto com IoU 0.5)  
+        - mAP50-95: 0.308    (30.8% média geral com múltiplos IoUs)  
+        Mesmo com poucas epocs (o ideal seria pelo menos 80), o modelo está identificando os objetos com boa precisão geral e generalizando razoavelmente bem.
+
+- Resultado validação com imagens
         ![Resultados de treinamentos](images/val_batch0_labels.jpg)
 
 
