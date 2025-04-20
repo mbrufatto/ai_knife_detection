@@ -1,6 +1,5 @@
 # 🛡️ FIAP VisionGuard: MVP para detecção supervisionada de objetos cortantes
 
-Este projeto utiliza a biblioteca Ultralytics YOLO e OpenCV para detectar objetos específicos (configurado inicialmente para facas e tesouras) em tempo real a partir de uma webcam ou outra fonte de vídeo. Ele fornece uma interface gráfica simples (Tkinter) para selecionar dinamicamente o modelo YOLO e a fonte de vídeo, exibe a contagem de FPS e envia alertas para um canal do Discord configurado via webhook sempre que um objeto de alerta é detectado acima de um limiar de confiança, incluindo uma imagem do momento da detecção.
 ## Descrição do Projeto
 
 Este projeto utiliza a biblioteca **Ultralytics (8.3) YOLOv11** em conjunto com **OpenCV** para detectar objetos específicos em tempo real, como **facas** e **tesouras**, a partir de uma **webcam**, stream **RTSP** ou qualquer outra fonte de vídeo. 
