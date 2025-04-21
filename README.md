@@ -99,7 +99,7 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
         ![Resultados de treinamentos](images/val_batch0_labels.jpg)  
 
 - Alertas no Discord
-        ![Mensagens de segurança](images/alerta_discord.jpg)  
+        ![Mensagens de segurança](images/alerta_discord.png)  
 
 
 - Melhor modelo treinado: **yolo11s_dataset_knife.pt**.
