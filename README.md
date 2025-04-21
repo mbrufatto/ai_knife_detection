@@ -98,7 +98,7 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
 - Resultado validação com imagens
         ![Resultados de treinamentos](images/val_batch0_labels.jpg)  
 
-- Alertas no Discord
+- Alertas no Discord  
         ![Mensagens de segurança](images/alerta_discord.png)  
 
 
