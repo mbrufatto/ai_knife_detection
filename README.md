@@ -80,9 +80,12 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
 
 ## Resultados Obtidos
 - Identificação de objetos como facas e tesouras através de câmeras web  
-        ![Objetos Identificados](images/sample.png)
-        ![Objetos Identificados](images/video1_cortante.png)
-        ![Objetos Identificados](images/video2_cortante.png)
+        ![Objetos Identificados](images/sample.png)  
+
+- Processamento dos vídeos do desafio  
+        ![Objetos Identificados](images/video1_cortante.png)  
+        ![Objetos Identificados 2](images/video2_cortante.png)    
+
 - Finetuning com DataSet COCO | 40 epocs | 4GB GPU
         ![Resultados de treinamentos](images/results_yolo11_coco.png)
         Interpretação dos resultados:  
@@ -90,10 +93,14 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
         - R:      0.402      (40.2% de recall)  
         - mAP50:  0.452      (45.2% média de acerto com IoU 0.5)  
         - mAP50-95: 0.308    (30.8% média geral com múltiplos IoUs)  
-        Mesmo com poucas epocs (o ideal seria pelo menos 80), o modelo está identificando os objetos com boa precisão geral e generalizando razoavelmente bem.
+        Mesmo com poucas epocs (o ideal seria pelo menos 80), o modelo está identificando os objetos com boa precisão geral e generalizando razoavelmente bem.  
 
 - Resultado validação com imagens
-        ![Resultados de treinamentos](images/val_batch0_labels.jpg)
+        ![Resultados de treinamentos](images/val_batch0_labels.jpg)  
+
+- Alertas no Discord
+        ![Mensagens de segurança](images/alerta_discord.jpg)  
+
 
 - Melhor modelo treinado: **yolo11s_dataset_knife.pt**.
         Aparentemente quando o modelo é treinado para identificar um único objeto os resultados são mais precisos.
