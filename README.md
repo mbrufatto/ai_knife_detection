@@ -30,6 +30,16 @@ As detecções e os alertas são processados de forma assíncrona, garantindo fl
     `ALERT_THRESHOLD` – nível de confiança mínimo
     `ALERT_COOLDOWN_SECONDS` – tempo de espera entre alertas
 
+### Configurando o Canal no Discord
+Para realiza a integração com o Discord, para ser possível receber as notificações, basta seguir os seguintes passos:
+- Vá em Configuração do Servidor -> Integrações -> Webhooks;
+- Adicione um novo Webhook, clicando em Novo webhook;
+- Abra o novo webhook que foi criado, coloque o nome que desejar;
+- E adicione o canal que deseja que receba as notificações, quando for identifcado um objeto cortante;
+- Copie a URL do webhook, clicando no botão, Copiar URL do Webhook;
+  - No arquivo .env, adicionar a seguinte chave:
+      DISCORD_WEBHOOK_URL = <<URL copiada do Webhook criado no discord>>
+
 ### Operações Assíncronas
 - Modelos e alertas são processados em **threads paralelas**, mantendo a interface fluida.
 - Interface **não bloqueia** durante detecção nem envio de alertas.
